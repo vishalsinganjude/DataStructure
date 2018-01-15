@@ -1,0 +1,42 @@
+Schema :
+ CREATE TABLE Department
+    (deptID int PRIMARY KEY NOT NULL, 
+     deptName varchar(20))
+;   
+
+CREATE TABLE Student
+    (Roll_no int PRIMARY KEY NOT NULL, 
+     Name varchar(20),
+     dept int references Department(deptID))
+;
+
+INSERT INTO Department VALUES (1, 'COMP');
+INSERT INTO Department VALUES (2, 'ETC');
+INSERT INTO Department VALUES (3, 'ME');
+INSERT INTO Department VALUES (4, 'CE');
+
+INSERT INTO Student VALUES (1,'aaa',1);
+INSERT INTO Student VALUES (2,'bbb',2);
+INSERT INTO Student VALUES (3,'ccc',1);
+INSERT INTO Student VALUES (4,'ddd',NULL);
+
+
+Query:
+
+select * from Student;
+select * from Department;
+
+select * from Student, Department where Student.dept = Department.deptID;
+
+select * from Student inner join Department ON Student.dept = Department.deptID;
+
+select * from Student left join Department ON Student.dept = Department.deptID;
+
+select * from Student right join Department ON Student.dept = Department.deptID;
+
+select * from Student full join Department ON Student.dept = Department.deptID;
+
+select * from Department full join Student ON Student.dept = Department.deptID;
+
+select s.Name, d.deptName from Student s cross join Department d;
+

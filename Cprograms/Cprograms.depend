@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1506441799 source:c:\users\vishal\desktop\datastructure\cprograms\pointer.c
+	<stdio.h>
+
+1506253353 source:c:\users\vishal\desktop\datastructure\cprograms\diffcharandarray1.c
+
+1506446437 source:c:\users\vishal\desktop\datastructure\cprograms\singlylinklist.c
+	<stdio.h>
+	<stdlib.h>
+

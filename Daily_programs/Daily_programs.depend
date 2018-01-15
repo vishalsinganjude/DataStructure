@@ -1,0 +1,9 @@
+# depslib dependency file v1.0
+1510467083 source:c:\users\vishal\desktop\datastructure\daily_programs\hellosir.c
+	<stdio.h>
+
+1510467949 source:c:\users\vishal\desktop\datastructure\daily_programs\stack.c
+	<stdio.h>
+	<limits.h>
+	<stdlib.h>
+
